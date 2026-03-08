@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Report
+    url: https://github.com/orgs/StangaNet/repositories
+    about: >
+      To report a security vulnerability, use GitHub Private Vulnerability
+      Reporting on the affected repository (Security tab > Report a vulnerability).
+  - name: General Discussion
+    url: https://github.com/orgs/StangaNet/discussions
+    about: Questions, ideas, and general conversation about StangaNet projects.

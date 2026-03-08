@@ -1,0 +1,16 @@
+name: .NET CI
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    uses: StangaNet/.github/workflows/dotnet-lib.yml@main
+    with:
+      library-name: 'LIBRARY_NAME'   # e.g. StangaNetLib.Auth
+      artifact-name: 'ARTIFACT_NAME' # e.g. stanganetlib-auth-nuget
+      needs-github-packages-source: true

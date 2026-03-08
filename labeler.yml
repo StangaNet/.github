@@ -1,0 +1,67 @@
+# Label configuration for actions/labeler@v5
+# Applied automatically to pull requests based on changed file paths.
+# Covers both .github org repo and individual project repositories.
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "**/*.txt"
+
+source:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/**"
+          - "**/*.cs"
+          - "**/*.ts"
+          - "**/*.js"
+
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "tests/**"
+          - "**/*.Tests/**"
+          - "**/*Tests.cs"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - ".github/workflow-templates/**"
+          - "workflows/**"
+          - "workflow-templates/**"
+
+build:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.csproj"
+          - "**/*.sln"
+          - "Directory.Build.props"
+          - "global.json"
+          - "nuget.config"
+          - "package.json"
+          - "package-lock.json"
+
+templates:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "ISSUE_TEMPLATE/**"
+          - "PULL_REQUEST_TEMPLATE.md"
+          - ".github/ISSUE_TEMPLATE/**"
+          - ".github/PULL_REQUEST_TEMPLATE.md"
+
+configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "CODEOWNERS"
+          - "FUNDING.yml"
+          - "labeler.yml"
+          - "**/.gitattributes"
+          - "**/.gitignore"
+          - "**/.editorconfig"
+
+security:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "SECURITY.md"
+          - "**/SECURITY.md"
