@@ -36,7 +36,7 @@ build:
       - any-glob-to-any-file:
           - "**/*.csproj"
           - "**/*.sln"
-          - "Directory.Build.props"
+          - "**/*.props"
           - "global.json"
           - "nuget.config"
           - "package.json"

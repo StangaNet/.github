@@ -24,7 +24,8 @@ See the [license](#license) section for details.
 | Package | Description |
 | --- | --- |
 | [StangaNetLib.Core](https://github.com/StangaNet/StangaNetLib.Core) | Shared primitives, result types, and base abstractions used across all StangaNet libraries |
-| [StangaNetLib.Auth](https://github.com/StangaNet/StangaNetLib.Auth) | JWT authentication with refresh token rotation, BCrypt hashing, and revocation middleware |
+| [StangaNetLib.Concurrency](https://github.com/StangaNet/StangaNetLib.Concurrency) | Keyed locks, async throttling, bounded work queues, debouncing, and atomic counters for .NET |
+| [StangaNetLib.Auth](https://github.com/StangaNet/StangaNetLib.Auth) | JWT authentication with refresh token rotation, BCrypt hashing, revocation middleware, and Auth0 support (JWKS + Management API) |
 | [StangaNetLib.Caching](https://github.com/StangaNet/StangaNetLib.Caching) | `ICacheService` abstraction over in-memory, Redis, and null cache backends |
 | [StangaNetLib.Observability](https://github.com/StangaNet/StangaNetLib.Observability) | Structured logging, tracing, and metrics helpers for ASP.NET Core |
 | [StangaNetLib.RateLimit](https://github.com/StangaNet/StangaNetLib.RateLimit) | Rate limiting middleware and policy builder for ASP.NET Core |
