@@ -1,5 +1,9 @@
 # StangaNet
 
+> [!IMPORTANT]
+> **Tutte le librerie sono temporaneamente private e i pacchetti NuGet sono stati rimossi.**
+> È in corso un refactor massivo dell'intera suite. Le repository e i pacchetti torneranno disponibili al completamento del processo.
+
 Personal software organization — projects built for learning, experimentation, and craft.
 
 ---
