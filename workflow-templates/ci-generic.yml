@@ -1,0 +1,12 @@
+name: CI — Node.js
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    uses: StangaNet/.github/workflows/ci.yml@main
+    with:
+      node-version: '20'

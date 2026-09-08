@@ -1,0 +1,6 @@
+{
+  "name": "StangaNet .NET Library CI",
+  "description": "Builds, tests, packs, and publishes a StangaNet .NET library to GitHub Packages using the shared reusable workflow.",
+  "iconName": "octicon package",
+  "categories": [".NET", "NuGet", "CI"]
+}

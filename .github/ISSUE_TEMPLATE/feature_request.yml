@@ -1,0 +1,34 @@
+name: Feature Request
+description: Propose a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / User Value
+      placeholder: Why is this feature needed? What problem does it solve for the user?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Proposed Impact / Scope
+      placeholder: How will this change affect the existing system and its users?
+    validations:
+      required: false

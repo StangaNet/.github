@@ -1,0 +1,6 @@
+{
+  "name": "StangaNet CI — Node.js",
+  "description": "Runs npm install and test using the shared StangaNet Node.js CI reusable workflow.",
+  "iconName": "octicon workflow",
+  "categories": ["Node", "Testing", "CI"]
+}

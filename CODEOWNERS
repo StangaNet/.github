@@ -1,0 +1,6 @@
+# All files are owned by the organization maintainer
+* @StangaNet
+
+# Workflows require maintainer approval
+/workflows/ @StangaNet
+/workflow-templates/ @StangaNet

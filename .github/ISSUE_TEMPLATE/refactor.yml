@@ -1,0 +1,36 @@
+name: Refactor / Technical Debt
+description: Propose architectural improvements or code cleanups
+title: "[Refactor]: "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: target_area
+    attributes:
+      label: Target Area
+      placeholder: Specify the file, module, or subsystem that needs refactoring.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State / Problem
+      placeholder: Describe the technical debt or code smell (e.g., complexity, lack of testability, outdated pattern).
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_refactor
+    attributes:
+      label: Proposed Refactor
+      placeholder: How would you improve this?
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      placeholder: What are the advantages? (e.g., better performance, higher testability, improved readability)
+    validations:
+      required: true
