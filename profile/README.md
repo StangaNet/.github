@@ -1,8 +1,8 @@
 # StangaNet
 
 > [!IMPORTANT]
-> **All libraries are temporarily private and NuGet packages have been removed.**
-> A major refactor of the entire suite is underway. Repositories and packages will be restored once the process is complete.
+> **Most libraries are temporarily private and NuGet packages have been removed.**
+> A major refactor of the entire suite is underway. New packages are being restored as they reach stability.
 
 Personal software organization — projects built for learning, experimentation, and craft.
 
@@ -45,14 +45,15 @@ See the [license](#license) section for details.
 | StangaNetLib.FeatureFlags.Tenancy | |
 | StangaNetLib.Audit | |
 | StangaNetLib.Gdpr | |
-| StangaNetLib.ContentFlow | |
+| StangaNetLib.ContentFlow | A state-machine based workflow engine for content lifecycle management (Draft $\rightarrow$ Published) with background scheduling and auditing. |
 | StangaNetLib.Media | |
 | StangaNetLib.Search | |
 | StangaNetLib.Search.Elasticsearch | |
 | StangaNetLib.Search.Meilisearch | |
 
-### 🚀 Latest Milestone
+### 🚀 Latest Milestones
 * **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core v1.0.0!**
+* **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!**
 
 ---
 

@@ -74,6 +74,7 @@ You may view and use the code for personal non-commercial purposes with mandator
 We are currently undergoing a major refactor to modernize our core libraries and align them with the latest .NET standards. During this time, many NuGet packages are temporarily unavailable.
 
 ### 🚀 Recent Updates
+*   **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!** A robust workflow engine for content lifecycle management (Draft $\rightarrow$ Published), featuring background scheduling, state machine logic, and integrated auditing.
 *   **Sept 2026**: Initial launch of the organization-wide Community Health Files and GitHub Action workflow standardization.
 *   **Aug 2026**: Migration of core library documentation to the new StangaNet structure.
 *   **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core v1.0.0!** The first milestone of our new era.
