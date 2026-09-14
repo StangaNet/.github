@@ -21,48 +21,63 @@ See the [license](#license) section for details.
 
 ---
 
+## Documentation
+
+The official StangaNet documentation website is available at:
+
+**https://stanganet.github.io/**
+
+It provides centralized documentation, guides, and technical references for StangaNet projects and libraries.
+
+---
+
 ## Libraries
 
 .NET libraries published to [GitHub Packages](https://github.com/orgs/StangaNet/packages).
 
-| Package | Description |
-| --- | --- |
-| StangaNetLib.Core | A lightweight, zero-dependency foundation for implementing Clean Architecture and DDD in .NET, providing essential primitives like `Result<T>`, entities, domain events, specifications, guard clauses, and pagination. |
-| StangaNetLib.Concurrency | |
-| StangaNetLib.Resilience | |
-| StangaNetLib.Caching | |
-| StangaNetLib.Storage | |
-| StangaNetLib.Cryptography | |
-| StangaNetLib.Jobs | |
-| StangaNetLib.EventBus | |
-| StangaNetLib.SchemaRegistry | |
-| StangaNetLib.Auth | |
-| StangaNetLib.Observability | |
-| StangaNetLib.RequestProtection | |
-| StangaNetLib.Tenancy | |
-| StangaNetLib.Notifications | |
-| StangaNetLib.FeatureFlags | |
-| StangaNetLib.FeatureFlags.Tenancy | |
-| StangaNetLib.Audit | |
-| StangaNetLib.Gdpr | |
-| StangaNetLib.ContentFlow | A state-machine based workflow engine for content lifecycle management (Draft $\rightarrow$ Published) with background scheduling and auditing. |
-| StangaNetLib.Media | |
-| StangaNetLib.Search | |
-| StangaNetLib.Search.Elasticsearch | |
-| StangaNetLib.Search.Meilisearch | |
+For detailed documentation and technical references, see the
+[official StangaNet documentation](https://stanganet.github.io/).
+
+| Package                           | Description                                                                                                                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| StangaNetLib.Core                 | A lightweight, zero-dependency foundation for implementing Clean Architecture and DDD in .NET, providing essential primitives like `Result<T>`, entities, domain events, specifications, guard clauses, and pagination. |
+| StangaNetLib.Concurrency          |                                                                                                                                                                                                                         |
+| StangaNetLib.Resilience           |                                                                                                                                                                                                                         |
+| StangaNetLib.Caching              |                                                                                                                                                                                                                         |
+| StangaNetLib.Storage              |                                                                                                                                                                                                                         |
+| StangaNetLib.Cryptography         |                                                                                                                                                                                                                         |
+| StangaNetLib.Jobs                 |                                                                                                                                                                                                                         |
+| StangaNetLib.EventBus             |                                                                                                                                                                                                                         |
+| StangaNetLib.SchemaRegistry       |                                                                                                                                                                                                                         |
+| StangaNetLib.Auth                 |                                                                                                                                                                                                                         |
+| StangaNetLib.Observability        |                                                                                                                                                                                                                         |
+| StangaNetLib.RequestProtection    |                                                                                                                                                                                                                         |
+| StangaNetLib.Tenancy              |                                                                                                                                                                                                                         |
+| StangaNetLib.Notifications        |                                                                                                                                                                                                                         |
+| StangaNetLib.FeatureFlags         |                                                                                                                                                                                                                         |
+| StangaNetLib.FeatureFlags.Tenancy |                                                                                                                                                                                                                         |
+| StangaNetLib.Audit                |                                                                                                                                                                                                                         |
+| StangaNetLib.Gdpr                 |                                                                                                                                                                                                                         |
+| StangaNetLib.ContentFlow          | A state-machine based workflow engine for content lifecycle management (Draft $\rightarrow$ Published) with background scheduling and auditing.                                                                         |
+| StangaNetLib.Media                |                                                                                                                                                                                                                         |
+| StangaNetLib.Search               |                                                                                                                                                                                                                         |
+| StangaNetLib.Search.Elasticsearch |                                                                                                                                                                                                                         |
+| StangaNetLib.Search.Meilisearch   |                                                                                                                                                                                                                         |
 
 ### 🚀 Latest Milestones
+
 * **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core v1.0.0!**
 * **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!**
+* **Sept 14, 2026**: 📚 **Official StangaNet documentation website launched!**
 
 ---
 
 ## Philosophy
 
-- Prefer simplicity over complexity
-- Build things that last
-- Document as you go
-- Ship when it is ready, not before
+* Prefer simplicity over complexity
+* Build things that last
+* Document as you go
+* Ship when it is ready, not before
 
 ---
 
@@ -72,12 +87,13 @@ All StangaNet projects are released under the
 **StangaNet Source-Available License v1.0**.
 
 **In plain language:**
-- You **can** view and study the code
-- You **can** use it in personal, non-commercial projects
-- You **must always** credit StangaNet as the original author
-- You **cannot** distribute modified versions
-- You **cannot** use it commercially
-- You **cannot** claim authorship or remove attribution
+
+* You **can** view and study the code
+* You **can** use it in personal, non-commercial projects
+* You **must always** credit StangaNet as the original author
+* You **cannot** distribute modified versions
+* You **cannot** use it commercially
+* You **cannot** claim authorship or remove attribution
 
 Full license: [LICENSE](https://github.com/StangaNet/.github/blob/main/LICENSE)
 
