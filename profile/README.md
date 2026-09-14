@@ -42,7 +42,7 @@ For detailed documentation and technical references, see the
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | StangaNetLib.Core                 | A lightweight, zero-dependency foundation for implementing Clean Architecture and DDD in .NET, providing essential primitives like `Result<T>`, entities, domain events, specifications, guard clauses, and pagination. |
 | StangaNetLib.Concurrency          |                                                                                                                                                                                                                         |
-| StangaNetLib.Resilience           |                                                                                                                                                                                                                         |
+| StangaNetLib.Resilience           | Cross-cutting resilience for .NET built on `Microsoft.Extensions.Resilience` (Polly v8), executing operations through named pipelines and converting pipeline failures into `Result<T>`.                                |
 | StangaNetLib.Caching              |                                                                                                                                                                                                                         |
 | StangaNetLib.Storage              |                                                                                                                                                                                                                         |
 | StangaNetLib.Cryptography         |                                                                                                                                                                                                                         |
@@ -69,6 +69,7 @@ For detailed documentation and technical references, see the
 * **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core v1.0.0!**
 * **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!**
 * **Sept 14, 2026**: 📚 **Official StangaNet documentation website launched!**
+* **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience v1.0.0!**
 
 ---
 
