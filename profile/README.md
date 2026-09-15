@@ -40,7 +40,7 @@ For detailed documentation and technical references, see the
 | Package                           | Description                                                                                                                                                                                                             |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | StangaNetLib.Core                 | A lightweight, zero-dependency foundation for implementing Clean Architecture and DDD in .NET, providing essential primitives like `Result<T>`, entities, domain events, specifications, guard clauses, and pagination. |
-| StangaNetLib.Concurrency          |                                                                                                                                                                                                                         |
+| StangaNetLib.Concurrency          | Concurrency primitives and utilities for building safe, efficient, and composable concurrent operations in .NET.                                                                                                        |
 | StangaNetLib.Resilience           | Cross-cutting resilience for .NET built on `Microsoft.Extensions.Resilience` (Polly v8), executing operations through named pipelines and converting pipeline failures into `Result<T>`.                                |
 | StangaNetLib.Caching              |                                                                                                                                                                                                                         |
 | StangaNetLib.Storage              |                                                                                                                                                                                                                         |
@@ -69,6 +69,7 @@ For detailed documentation and technical references, see the
 * **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!**
 * **Sept 14, 2026**: 📚 **Official StangaNet documentation website launched!**
 * **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience v1.0.0!**
+* **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency v1.0.0!**
 
 ---
 
@@ -87,7 +88,7 @@ All StangaNet projects are released under the **Apache License 2.0**.
 
 You are free to use, modify, and distribute the code (including commercially), provided you comply with the license terms (including attribution).
 
-Full license: [LICENSE](https://github.com/StangaNet/.github/blob/main/LICENSE)
+Full license: https://github.com/StangaNet/.github/blob/main/LICENSE
 
 ---
 
