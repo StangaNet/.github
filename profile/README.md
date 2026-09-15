@@ -65,11 +65,11 @@ For detailed documentation and technical references, see the
 
 ### 🚀 Latest Milestones
 
-* **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core v1.0.0!**
-* **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow v1.0.0!**
+* **Sept 08, 2026**: 🎉 **Official Release of StangaNetLib.Core!**
+* **Sept 09, 2026**: 🚀 **Official Release of StangaNetLib.ContentFlow!**
 * **Sept 14, 2026**: 📚 **Official StangaNet documentation website launched!**
-* **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience v1.0.0!**
-* **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency v1.0.0!**
+* **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience!**
+* **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency!**
 
 ---
 
