@@ -29,5 +29,5 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 ## Licensing
 
 All projects are released under the terms specified in each repository's `LICENSE` file.
-The default license for StangaNet projects is the **StangaNet Source-Available License v1.0**, which permits personal non-commercial use with mandatory attribution, and prohibits modification, redistribution, and commercial use.
+The default license for StangaNet projects is the **Apache License 2.0**.
 See [LICENSE](./LICENSE) for details.

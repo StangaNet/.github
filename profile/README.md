@@ -13,9 +13,8 @@ Personal software organization — projects built for learning, experimentation,
 StangaNet is a one-person organization maintained by a single developer.
 Projects here span a range of domains: tooling, automation, web development, and system programming.
 
-All repositories are published in **read-only** mode.
-You can explore the code, learn from it, and share it with attribution —
-but modifications and commercial use are not permitted.
+All repositories are published for public use under the Apache License 2.0.
+You are free to use, modify, and distribute the code (including commercially), provided you comply with the license terms.
 
 See the [license](#license) section for details.
 
@@ -84,17 +83,9 @@ For detailed documentation and technical references, see the
 
 ## License
 
-All StangaNet projects are released under the
-**StangaNet Source-Available License v1.0**.
+All StangaNet projects are released under the **Apache License 2.0**.
 
-**In plain language:**
-
-* You **can** view and study the code
-* You **can** use it in personal, non-commercial projects
-* You **must always** credit StangaNet as the original author
-* You **cannot** distribute modified versions
-* You **cannot** use it commercially
-* You **cannot** claim authorship or remove attribution
+You are free to use, modify, and distribute the code (including commercially), provided you comply with the license terms (including attribution).
 
 Full license: [LICENSE](https://github.com/StangaNet/.github/blob/main/LICENSE)
 

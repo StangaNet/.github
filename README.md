@@ -16,7 +16,7 @@ Files stored here are automatically applied to any repository in the organizatio
 | `SECURITY.md` | Vulnerability reporting process |
 | `SUPPORT.md` | How to get help |
 | `GOVERNANCE.md` | Decision-making structure |
-| `LICENSE` | Default license (StangaNet Source-Available License v1.0) |
+| `LICENSE` | Default license (Apache License 2.0) |
 | `FUNDING.yml` | Sponsorship/donation links |
 | `CODEOWNERS` | Code ownership assignments |
 | `ISSUE_TEMPLATE/` | Structured templates for bugs and feature requests |
@@ -61,9 +61,7 @@ jobs:
 
 ## License
 
-All StangaNet projects are published under the **StangaNet Source-Available License v1.0** unless stated otherwise in the individual repository.
-
-You may view and use the code for personal non-commercial purposes with mandatory attribution. Modification, redistribution, and commercial use are not permitted.
+All StangaNet projects are published under the **Apache License 2.0** unless stated otherwise in the individual repository.
 
 ## Release Roadmap & What's New
 

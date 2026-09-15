@@ -14,18 +14,20 @@ Even though contributions are not accepted, you are welcome to:
 - **Open bug reports** using the [Bug Report template](../../issues/new?template=bug_report.yml)
 - **Request features** using the [Feature Request template](../../issues/new?template=feature_request.yml)
 - **Start a discussion** if the repository has Discussions enabled
-- **Fork** the project for private personal use, within the terms of the [LICENSE](./LICENSE)
+- **Fork** the project within the terms of the [LICENSE](./LICENSE)
 
 ## What you cannot do
 
-Under the **StangaNet Source-Available License v1.0** you may **not**:
+External code contributions (pull requests) are **not accepted**.
 
-- Submit code changes or patches
-- Redistribute modified versions of the code
-- Use the code for commercial purposes
-- Claim authorship or remove attribution
+Under the Apache License 2.0 you **may**:
+- Use the code commercially
+- Modify and redistribute it
+- Create derivative works
 
-If you use any part of this code, even for personal projects, you **must always** credit StangaNet as the original author. See [LICENSE](./LICENSE) for the exact attribution wording.
+You **must** always retain the copyright notice and include a copy of the Apache License 2.0.
+
+See [LICENSE](./LICENSE) for the full terms.
 
 ## Bug reports
 
