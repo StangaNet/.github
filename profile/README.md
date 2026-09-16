@@ -56,7 +56,7 @@ For detailed documentation and technical references, see the
 | StangaNetLib.FeatureFlags         |                                                                                                                                                                                                                         |
 | StangaNetLib.FeatureFlags.Tenancy |                                                                                                                                                                                                                         |
 | StangaNetLib.Audit                |                                                                                                                                                                                                                         |
-| StangaNetLib.Gdpr                 |                                                                                                                                                                                                                         |
+| StangaNetLib.Gdpr                 | Privacy and GDPR-focused building blocks for .NET applications, providing reusable abstractions and components for handling data protection and privacy requirements.                                                   |
 | StangaNetLib.ContentFlow          | A state-machine based workflow engine for content lifecycle management (Draft $\rightarrow$ Published) with background scheduling and auditing.                                                                         |
 | StangaNetLib.Media                |                                                                                                                                                                                                                         |
 | StangaNetLib.Search               |                                                                                                                                                                                                                         |
@@ -70,6 +70,7 @@ For detailed documentation and technical references, see the
 * **Sept 14, 2026**: 📚 **Official StangaNet documentation website launched!**
 * **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience!**
 * **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency!**
+* **Sept 16, 2026**: 🔐 **Official Release of StangaNetLib.Gdpr!**
 
 ---
 
