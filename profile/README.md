@@ -51,7 +51,7 @@ For detailed documentation and technical references, see the
 | StangaNetLib.Jobs                 |                                                                                                                                                                                                                         |
 | StangaNetLib.EventBus             |                                                                                                                                                                                                                         |
 | StangaNetLib.SchemaRegistry       |                                                                                                                                                                                                                         |
-| StangaNetLib.Auth                 |                                                                                                                                                                                                                         |
+| StangaNetLib.Auth                 | JWT authentication for .NET with per-device refresh tokens, BCrypt hashing, cache-backed token revocation, and Auth0 (JWKS + Management API) integration.                                                                |
 | StangaNetLib.Observability        | ASP.NET Core observability middleware: correlation IDs, request logging, RFC 7807 exception handling, ETag, security headers, and PII log masking with `Result<T>`.                                                     |
 | StangaNetLib.RequestProtection    |                                                                                                                                                                                                                         |
 | StangaNetLib.Tenancy              |                                                                                                                                                                                                                         |
@@ -76,6 +76,7 @@ For detailed documentation and technical references, see the
 * **Sept 16, 2026**: 🔐 **Official Release of StangaNetLib.Gdpr!**
 * **Sept 22, 2026**: 🗄️ **Official Release of StangaNetLib.Caching!**
 * **Sept 22, 2026**: 📡 **Official Release of StangaNetLib.Observability!**
+* **Sept 22, 2026**: 🔑 **Official Release of StangaNetLib.Auth!**
 
 ---
 
