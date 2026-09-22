@@ -52,7 +52,7 @@ For detailed documentation and technical references, see the
 | StangaNetLib.EventBus             |                                                                                                                                                                                                                         |
 | StangaNetLib.SchemaRegistry       |                                                                                                                                                                                                                         |
 | StangaNetLib.Auth                 |                                                                                                                                                                                                                         |
-| StangaNetLib.Observability        |                                                                                                                                                                                                                         |
+| StangaNetLib.Observability        | ASP.NET Core observability middleware: correlation IDs, request logging, RFC 7807 exception handling, ETag, security headers, and PII log masking with `Result<T>`.                                                     |
 | StangaNetLib.RequestProtection    |                                                                                                                                                                                                                         |
 | StangaNetLib.Tenancy              |                                                                                                                                                                                                                         |
 | StangaNetLib.Notifications        |                                                                                                                                                                                                                         |
@@ -75,6 +75,7 @@ For detailed documentation and technical references, see the
 * **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency!**
 * **Sept 16, 2026**: 🔐 **Official Release of StangaNetLib.Gdpr!**
 * **Sept 22, 2026**: 🗄️ **Official Release of StangaNetLib.Caching!**
+* **Sept 22, 2026**: 📡 **Official Release of StangaNetLib.Observability!**
 
 ---
 
