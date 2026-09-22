@@ -28,6 +28,9 @@ The official StangaNet documentation website is available at:
 
 It provides centralized documentation, guides, and technical references for StangaNet projects and libraries.
 
+Documentation is AI-assisted but always fully reviewed manually before publication.
+Updates may lag behind library releases by a few days, especially for larger packages.
+
 ---
 
 ## Libraries
@@ -42,7 +45,7 @@ For detailed documentation and technical references, see the
 | StangaNetLib.Core                 | A lightweight, zero-dependency foundation for implementing Clean Architecture and DDD in .NET, providing essential primitives like `Result<T>`, entities, domain events, specifications, guard clauses, and pagination. |
 | StangaNetLib.Concurrency          | Concurrency primitives and utilities for building safe, efficient, and composable concurrent operations in .NET.                                                                                                        |
 | StangaNetLib.Resilience           | Cross-cutting resilience for .NET built on `Microsoft.Extensions.Resilience` (Polly v8), executing operations through named pipelines and converting pipeline failures into `Result<T>`.                                |
-| StangaNetLib.Caching              |                                                                                                                                                                                                                         |
+| StangaNetLib.Caching              | Unified, provider-agnostic caching and distributed locking for .NET with InMemory and Redis providers, cache-aside (`GetOrSetAsync`) with thundering-herd protection, prefix invalidation, and `Result<T>`.           |
 | StangaNetLib.Storage              |                                                                                                                                                                                                                         |
 | StangaNetLib.Cryptography         |                                                                                                                                                                                                                         |
 | StangaNetLib.Jobs                 |                                                                                                                                                                                                                         |
@@ -71,6 +74,7 @@ For detailed documentation and technical references, see the
 * **Sept 14, 2026**: 🛡️ **Official Release of StangaNetLib.Resilience!**
 * **Sept 15, 2026**: ⚡ **Official Release of StangaNetLib.Concurrency!**
 * **Sept 16, 2026**: 🔐 **Official Release of StangaNetLib.Gdpr!**
+* **Sept 22, 2026**: 🗄️ **Official Release of StangaNetLib.Caching!**
 
 ---
 
