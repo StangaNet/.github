@@ -1,0 +1,40 @@
+name: Feature Request
+description: Propose a feature idea (no pull request expected)
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        StangaNet does **not** accept external pull requests.
+        Feature requests are ideas for the maintainer to consider.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / User Value
+      placeholder: Why is this feature needed? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Proposed Impact / Scope
+      placeholder: How would this affect existing APIs or users?
+    validations:
+      required: false
