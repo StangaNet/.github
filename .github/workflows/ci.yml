@@ -1,0 +1,56 @@
+name: CI — Node.js (Reusable)
+
+# Reusable workflow for Node.js repositories.
+#
+#   jobs:
+#     ci:
+#       uses: StangaNet/.github/.github/workflows/ci.yml@main
+#       with:
+#         node-version: '20'
+#       secrets: inherit
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        description: Node.js version
+        type: string
+        default: '20'
+      working-directory:
+        description: Working directory for npm commands
+        type: string
+        default: '.'
+      install-command:
+        description: Dependency install command
+        type: string
+        default: npm ci
+      test-command:
+        description: Test command
+        type: string
+        default: npm test
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: npm
+          cache-dependency-path: ${{ inputs.working-directory }}/package-lock.json
+
+      - name: Install dependencies
+        run: ${{ inputs.install-command }}
+
+      - name: Test
+        run: ${{ inputs.test-command }}

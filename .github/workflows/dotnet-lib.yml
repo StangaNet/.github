@@ -1,0 +1,112 @@
+name: .NET Library CI (Reusable)
+
+# Reusable workflow for StangaNet .NET library repositories.
+#
+#   jobs:
+#     ci:
+#       uses: StangaNet/.github/.github/workflows/dotnet-lib.yml@main
+#       with:
+#         library-name: 'StangaNetLib.Auth'
+#         artifact-name: 'stanganetlib-auth-nuget'
+#         publish: ${{ github.event_name != 'pull_request' }}
+#       secrets: inherit
+
+on:
+  workflow_call:
+    inputs:
+      library-name:
+        description: Library name matching the csproj (e.g. StangaNetLib.Auth)
+        type: string
+        required: true
+      csproj-path:
+        description: Optional path to the .csproj (defaults to src/LibraryName/LibraryName.csproj)
+        type: string
+        required: false
+        default: ''
+      artifact-name:
+        description: Artifact name for the uploaded NuGet package
+        type: string
+        required: true
+      needs-github-packages-source:
+        description: Add the StangaNet GitHub Packages NuGet source before restore
+        type: boolean
+        default: true
+      publish:
+        description: Push the nupkg to GitHub Packages (disable on pull_request)
+        type: boolean
+        default: true
+      configuration:
+        description: MSBuild configuration
+        type: string
+        default: Release
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-test-pack-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET SDKs
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/Directory.Packages.props', '**/*.csproj', '**/packages.lock.json', '**/nuget.config') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      - name: Add GitHub Packages source
+        if: ${{ inputs.needs-github-packages-source }}
+        run: |
+          dotnet nuget remove source github 2>/dev/null || true
+          dotnet nuget add source "https://nuget.pkg.github.com/StangaNet/index.json" \
+            --name github \
+            --username "${{ github.actor }}" \
+            --password "${{ secrets.GITHUB_TOKEN }}" \
+            --store-password-in-clear-text
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration ${{ inputs.configuration }} --no-restore
+
+      - name: Test
+        run: dotnet test --configuration ${{ inputs.configuration }} --no-build --verbosity normal
+
+      - name: Pack
+        env:
+          CSPROJ: ${{ inputs.csproj-path != '' && inputs.csproj-path || format('src/{0}/{0}.csproj', inputs.library-name) }}
+        run: dotnet pack "$CSPROJ" --configuration ${{ inputs.configuration }} --no-build --output ./nupkg
+
+      - name: Publish to GitHub Packages
+        if: ${{ inputs.publish }}
+        run: |
+          dotnet nuget push ./nupkg/*.nupkg \
+            --api-key "${{ secrets.GITHUB_TOKEN }}" \
+            --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
+            --skip-duplicate
+
+      - name: Upload NuGet artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.artifact-name }}
+          path: |
+            ./nupkg/*.nupkg
+            ./nupkg/*.snupkg
+          if-no-files-found: error
+          retention-days: 14
