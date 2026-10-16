@@ -1,0 +1,40 @@
+# Labeler rules for the StangaNet/.github repository only.
+# Individual product repos should ship their own labeler config if needed.
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "NOTICE"
+          - "LICENSE"
+
+workflows:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - "workflow-templates/**"
+
+templates:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/ISSUE_TEMPLATE/**"
+          - ".github/PULL_REQUEST_TEMPLATE.md"
+
+profile:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "profile/**"
+
+configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "CODEOWNERS"
+          - "labeler.yml"
+          - ".gitattributes"
+          - ".gitignore"
+          - ".github/FUNDING.yml"
+
+security:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "SECURITY.md"

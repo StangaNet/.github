@@ -1,0 +1,7 @@
+# Default owner for everything in this organization defaults repo
+* @StangaNet
+
+# Shared automation — require maintainer review
+.github/workflows/ @StangaNet
+workflow-templates/ @StangaNet
+labeler.yml @StangaNet

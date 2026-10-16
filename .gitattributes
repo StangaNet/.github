@@ -1,0 +1,25 @@
+# Organization defaults repo — LF everywhere
+* text=auto eol=lf
+
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.sh   text eol=lf
+*.ps1  text eol=lf
+
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
+
+# Linguist
+*.md linguist-documentation
+profile/** linguist-documentation

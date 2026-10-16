@@ -1,0 +1,10 @@
+# OS / editor noise for the organization defaults repo
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.vs/
