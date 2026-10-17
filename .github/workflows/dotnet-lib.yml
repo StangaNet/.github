@@ -69,15 +69,40 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Add GitHub Packages source
+      - name: Authenticate GitHub Packages
         if: ${{ inputs.needs-github-packages-source }}
         run: |
-          dotnet nuget remove source github 2>/dev/null || true
-          dotnet nuget add source "https://nuget.pkg.github.com/StangaNet/index.json" \
-            --name github \
-            --username "${{ github.actor }}" \
-            --password "${{ secrets.GITHUB_TOKEN }}" \
-            --store-password-in-clear-text
+          set -euo pipefail
+          # Repo nuget.config usually already declares the feed (StangaNet or legacy github)
+          # plus packageSourceMapping. Only attach GITHUB_TOKEN - never re-add the same URL.
+          URL='https://nuget.pkg.github.com/StangaNet/index.json'
+          USER='${{ github.actor }}'
+          PASS='${{ secrets.GITHUB_TOKEN }}'
+
+          if [ -f nuget.config ] && grep -q 'key="StangaNet"' nuget.config; then
+            NAME='StangaNet'
+          elif [ -f nuget.config ] && grep -q 'key="github"' nuget.config; then
+            NAME='github'
+          else
+            NAME='StangaNet'
+          fi
+
+          if [ -f nuget.config ] && grep -q "key=\"${NAME}\"" nuget.config; then
+            dotnet nuget update source "$NAME" \
+              --configfile nuget.config \
+              --username "$USER" \
+              --password "$PASS" \
+              --store-password-in-clear-text
+          else
+            for stale in github StangaNet; do
+              dotnet nuget remove source "$stale" 2>/dev/null || true
+            done
+            dotnet nuget add source "$URL" \
+              --name "$NAME" \
+              --username "$USER" \
+              --password "$PASS" \
+              --store-password-in-clear-text
+          fi
 
       - name: Restore
         run: dotnet restore
