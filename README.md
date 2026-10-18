@@ -6,6 +6,17 @@ GitHub applies root-level health files from this public `.github` repository to 
 
 ---
 
+## Authorship
+
+| What | How |
+| --- | --- |
+| **Library source** (`StangaNetLib.*` and related library code) | Written **by hand**, after careful research and personal development. This is the core of the organization. |
+| **Code documentation** (XML comments, API prose), **README** files, and **[stanganet.github.io](https://stanganet.github.io)** | Written **with AI**. Useful for discovery and onboarding; not treated as the key deliverable of StangaNet. |
+
+The organization profile text lives in [`profile/README.md`](./profile/README.md).
+
+---
+
 ## Contents
 
 | Path | Purpose |

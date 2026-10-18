@@ -12,17 +12,27 @@ Repositories are published under the Apache License 2.0. You may use, modify, an
 
 ---
 
+## How things are built
+
+**Libraries are the craft.** Every line of library source code is written by hand, after careful research and personal development — design, implementation, tests, and packaging included. That work is the point of StangaNet.
+
+**Documentation is support material.** XML/API comments in the libraries, repository README files, and the documentation site **[stanganet.github.io](https://stanganet.github.io)** are produced with AI assistance. They are useful for discovery and onboarding, but they are **not** treated as the core of the organization: the libraries are. Docs may lag releases by a few days.
+
+---
+
 ## Documentation
 
 Official docs: **https://stanganet.github.io/**
 
-Centralized guides and technical references for StangaNet projects. Documentation is AI-assisted and always reviewed manually before publication; updates may lag releases by a few days.
+Centralized guides and technical references for the StangaNetLib suite (and related projects). Authored with AI as described above.
 
 ---
 
 ## Libraries
 
 .NET libraries (`net8.0` / `net9.0`) published to [GitHub Packages](https://github.com/orgs/StangaNet/packages). Shared CI lives in [StangaNet/.github](https://github.com/StangaNet/.github).
+
+Hand-written source; AI-assisted docs and READMEs (see [How things are built](#how-things-are-built)).
 
 ### Foundation
 
@@ -64,7 +74,7 @@ Centralized guides and technical references for StangaNet projects. Documentatio
 
 - Prefer simplicity over complexity
 - Build things that last
-- Document as you go
+- Invest the careful work in the libraries; keep docs helpful but secondary
 - Ship when it is ready, not before
 
 ---

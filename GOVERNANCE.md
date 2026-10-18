@@ -5,6 +5,9 @@
 StangaNet is a personal organization with a single maintainer.
 Technical, directional, and operational decisions are made by that maintainer.
 
+**Library code** is hand-written following research and personal development — that is the organization’s primary craft.
+**Documentation** (in-code docs, READMEs, and [stanganet.github.io](https://stanganet.github.io)) is produced with AI assistance and is not treated as the core of the organization.
+
 ## Roles
 
 | Role | Who | Responsibilities |
