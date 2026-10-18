@@ -1,9 +1,5 @@
 # StangaNet
 
-> [!IMPORTANT]
-> **Most libraries are temporarily private and NuGet packages have been removed.**
-> A major refactor of the suite is underway. Packages are restored as they reach stability.
-
 Personal software organization — projects built for learning, experimentation, and craft.
 
 ---
@@ -26,22 +22,41 @@ Centralized guides and technical references for StangaNet projects. Documentatio
 
 ## Libraries
 
-.NET libraries published to [GitHub Packages](https://github.com/orgs/StangaNet/packages).
+.NET libraries (`net8.0` / `net9.0`) published to [GitHub Packages](https://github.com/orgs/StangaNet/packages). Shared CI lives in [StangaNet/.github](https://github.com/StangaNet/.github).
+
+### Foundation
 
 | Package | Description |
 | --- | --- |
-| [StangaNetLib.Core](https://github.com/StangaNet/StangaNetLib.Core) | Clean Architecture / DDD primitives for .NET: `Result<T>`, entities, domain events, specifications, guards, pagination. |
+| [StangaNetLib.Core](https://github.com/StangaNet/StangaNetLib.Core) | Clean Architecture / DDD primitives: `Result<T>`, entities, domain events, specifications, guards, pagination. |
 | [StangaNetLib.Concurrency](https://github.com/StangaNet/StangaNetLib.Concurrency) | Keyed locks, throttling, work queues, debouncing, and atomic counters. |
 | [StangaNetLib.Resilience](https://github.com/StangaNet/StangaNetLib.Resilience) | Named Polly / `Microsoft.Extensions.Resilience` pipelines that surface failures as `Result<T>`. |
+
+### Platform
+
+| Package | Description |
+| --- | --- |
 | [StangaNetLib.Caching](https://github.com/StangaNet/StangaNetLib.Caching) | InMemory / Redis cache and distributed locks, cache-aside with thundering-herd protection. |
 | [StangaNetLib.Storage](https://github.com/StangaNet/StangaNetLib.Storage) | Blob storage (Local, S3, Azure Blob) with streaming, pre-signed URLs, and `Result<T>`. |
-| [StangaNetLib.Auth](https://github.com/StangaNet/StangaNetLib.Auth) | JWT auth with refresh-token rotation, BCrypt, cache-backed revocation, and Auth0 integration. |
-| [StangaNetLib.Observability](https://github.com/StangaNet/StangaNetLib.Observability) | ASP.NET Core middleware: correlation IDs, request logging, ProblemDetails, ETag, security headers, PII masking. |
-| [StangaNetLib.Gdpr](https://github.com/StangaNet/StangaNetLib.Gdpr) | Consent, DSAR, objection/restriction, breach audit, and AES-GCM pseudonymization building blocks. |
-| [StangaNetLib.ContentFlow](https://github.com/StangaNet/StangaNetLib.ContentFlow) | Content lifecycle state machine (Draft → Published) with scheduling and audit trail. |
-| [StangaNetLib.Media](https://github.com/StangaNet/StangaNetLib.Media) | Image variants (JPEG/WebP), magic-byte validation, and photo storage (local / Azure / Storage-backed). |
+| [StangaNetLib.Media](https://github.com/StangaNet/StangaNetLib.Media) | Image variants (JPEG/WebP), magic-byte validation, and photo storage. |
+| [StangaNetLib.Auth](https://github.com/StangaNet/StangaNetLib.Auth) | JWT auth with refresh-token rotation, cache-backed revocation, and Auth0 integration. |
+| [StangaNetLib.Observability](https://github.com/StangaNet/StangaNetLib.Observability) | Correlation IDs, request logging, ProblemDetails, ETag, security headers, PII masking. |
+| [StangaNetLib.Cryptography](https://github.com/StangaNet/StangaNetLib.Cryptography) | Hashing, KDF, HMAC, signatures, and secure token helpers. |
+| [StangaNetLib.Tenancy](https://github.com/StangaNet/StangaNetLib.Tenancy) | Tenant resolve (header / host / path / claims) and store abstractions. |
+| [StangaNetLib.FeatureFlags](https://github.com/StangaNet/StangaNetLib.FeatureFlags) | Feature flags with percentage rollout, tenant allow-lists, and live reload. |
+| [StangaNetLib.Jobs](https://github.com/StangaNet/StangaNetLib.Jobs) | Background jobs — in-memory backend and Hangfire adapter. |
+| [StangaNetLib.RequestProtection](https://github.com/StangaNet/StangaNetLib.RequestProtection) | Rate limiting and idempotency (Caching-backed). |
+| [StangaNetLib.SchemaRegistry](https://github.com/StangaNet/StangaNetLib.SchemaRegistry) | Versioned JSON Schema validation. |
+| [StangaNetLib.Notifications](https://github.com/StangaNet/StangaNetLib.Notifications) | Multi-channel notification dispatch with templates and delivery tracking. |
+| [StangaNetLib.Search](https://github.com/StangaNet/StangaNetLib.Search) | Search abstractions with an in-memory BM25 backend. |
+| [StangaNetLib.EventBus](https://github.com/StangaNet/StangaNetLib.EventBus) | Pub/sub event bus — InMemory and RabbitMQ, with Jobs integration. |
 
-Additional libraries are in progress and will be listed here as they stabilize.
+### Domain
+
+| Package | Description |
+| --- | --- |
+| [StangaNetLib.Gdpr](https://github.com/StangaNet/StangaNetLib.Gdpr) | Consent, DSAR, objection/restriction, breach audit, and AES-GCM pseudonymization. |
+| [StangaNetLib.ContentFlow](https://github.com/StangaNet/StangaNetLib.ContentFlow) | Content lifecycle state machine (Draft → Published) with scheduling and audit trail. |
 
 ---
 
