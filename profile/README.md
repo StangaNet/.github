@@ -30,7 +30,7 @@ Centralized guides and technical references for the StangaNetLib suite (and rela
 
 ## Libraries
 
-.NET libraries (`net8.0` / `net9.0`) published to [GitHub Packages](https://github.com/orgs/StangaNet/packages). Shared CI lives in [StangaNet/.github](https://github.com/StangaNet/.github).
+.NET libraries (`net8.0` / `net9.0` / `net10.0`) published to [GitHub Packages](https://github.com/orgs/StangaNet/packages). Shared CI lives in [StangaNet/.github](https://github.com/StangaNet/.github).
 
 Hand-written source; AI-assisted docs and READMEs (see [How things are built](#how-things-are-built)).
 
