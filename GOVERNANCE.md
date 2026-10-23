@@ -12,15 +12,29 @@ Technical, directional, and operational decisions are made by that maintainer.
 
 | Role | Who | Responsibilities |
 | --- | --- | --- |
-| Maintainer | Organization owner | Releases, code ownership, all decisions |
+| Maintainer | Organization owner (`stangherlin-enrico`) | Releases, code ownership, all decisions |
 
 There are no external maintainers, committers, or governance committees.
+A `maintainers` team may be created for future structure; currently it contains only the owner.
+
+## Technical controls
+
+All `StangaNetLib.*` repositories have an active ruleset on `main`:
+
+- Require a pull request before merging
+- At least 1 approving review
+- Dismiss stale reviews when new commits are pushed
+- Block force pushes
+- Block branch deletions
+
+Wiki is disabled on all repositories.
+Discussions are enabled **only** on the `.github` repository.
 
 ## Decision making
 
 Changes are decided by the maintainer. There is no voting process.
 
-Community feedback via Issues and Discussions is welcome but does not imply a commitment to act on it.
+Community feedback via Issues and Discussions (on `.github`) is welcome but does not imply a commitment to act on it.
 
 ## Contributions
 
