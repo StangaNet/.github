@@ -48,15 +48,19 @@ Hand-written source; AI-assisted docs and READMEs (see [How things are built](#h
 | --- | --- |
 | [StangaNetLib.Caching](https://github.com/StangaNet/StangaNetLib.Caching) | InMemory / Redis cache and distributed locks, cache-aside with thundering-herd protection. |
 | [StangaNetLib.Storage](https://github.com/StangaNet/StangaNetLib.Storage) | Blob storage (Local, S3, Azure Blob) with streaming, pre-signed URLs, and optional Cryptography at-rest encryption. |
+| [StangaNetLib.EncryptedStorage](https://github.com/StangaNet/StangaNetLib.EncryptedStorage) | Local encrypted-at-rest blobs with explicit SNEN AES-GCM API (Storage + Cryptography). |
 | [StangaNetLib.Media](https://github.com/StangaNet/StangaNetLib.Media) | Image variants (JPEG/WebP), magic-byte validation before decode, and Storage-backed photo storage. |
 | [StangaNetLib.Auth](https://github.com/StangaNet/StangaNetLib.Auth) | Self-hosted JWT with Argon2id, TOTP MFA, login lockout, refresh rotation, and optional Auth0 / external IdP. |
 | [StangaNetLib.Observability](https://github.com/StangaNet/StangaNetLib.Observability) | Correlation IDs, request logging, ProblemDetails, ETag, security headers, and financial PII masking. |
 | [StangaNetLib.Cryptography](https://github.com/StangaNet/StangaNetLib.Cryptography) | Hashing, KDF, HMAC, AES-GCM SNEN at-rest envelopes, signatures, and secure tokens. |
+| [StangaNetLib.Money](https://github.com/StangaNet/StangaNetLib.Money) | Minor-unit `Money` value object with EUR-first arithmetic, allocate/split, parse/format. |
 | [StangaNetLib.Tenancy](https://github.com/StangaNet/StangaNetLib.Tenancy) | Tenant resolve (header / host / path / claims) and store abstractions. |
 | [StangaNetLib.FeatureFlags](https://github.com/StangaNet/StangaNetLib.FeatureFlags) | Feature flags with percentage rollout, tenant allow-lists, and live reload. |
 | [StangaNetLib.Jobs](https://github.com/StangaNet/StangaNetLib.Jobs) | Background jobs — in-memory / Hangfire, idempotent enqueue, and cron materialization horizon. |
+| [StangaNetLib.Recurrence](https://github.com/StangaNet/StangaNetLib.Recurrence) | Recurring calendar rules with idempotent occurrence materialization to a horizon. |
 | [StangaNetLib.RequestProtection](https://github.com/StangaNet/StangaNetLib.RequestProtection) | Rate limiting (AuthLockout preset) and required idempotency keys (Caching-backed). |
 | [StangaNetLib.SchemaRegistry](https://github.com/StangaNet/StangaNetLib.SchemaRegistry) | Versioned JSON Schema validation, portable backup manifests, and registry snapshots. |
+| [StangaNetLib.Backup](https://github.com/StangaNet/StangaNetLib.Backup) | Encrypted portable `.snbak` backups (SNEN + ZIP + SchemaRegistry manifest). |
 | [StangaNetLib.Notifications](https://github.com/StangaNet/StangaNetLib.Notifications) | Multi-channel dispatch (email, in-app, push) with inbox, templates, and channel toggles. |
 | [StangaNetLib.Search](https://github.com/StangaNet/StangaNetLib.Search) | Search abstractions with an in-memory BM25 backend. |
 | [StangaNetLib.EventBus](https://github.com/StangaNet/StangaNetLib.EventBus) | Pub/sub event bus — InMemory and RabbitMQ, with Jobs integration. |
